@@ -1,0 +1,15 @@
+body,
+form,
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 150%;
+}
+form * {
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
