@@ -8,7 +8,7 @@ function prepParams(params) {
   return queryString.join("&");
 }
 
-function getParks(apiKey, state, resultNumber) {
+function getParks(state, resultNumber) {
   const params = {
     api_key: apiKey,
     stateCode: state,
@@ -58,7 +58,7 @@ function handleSubmit() {
     const maxResults = $("#max-results").val();
     const stateSelections = $("#state-chooser").val();
 
-    getParks(apiKey, stateSelections, maxResults);
+    getParks(stateSelections, maxResults);
 
     console.log("handleSubmit ran");
   });
