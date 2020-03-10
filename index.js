@@ -1,4 +1,4 @@
-//const apiKey = "meycjg4fBYitvoDUhWWU9uaWgxUAH9Z9Fbc5Is4y";
+const apiKey = "meycjg4fBYitvoDUhWWU9uaWgxUAH9Z9Fbc5Is4y";
 const url = "https://developer.nps.gov/api/v1/parks";
 
 function prepParams(params) {
@@ -10,7 +10,7 @@ function prepParams(params) {
 
 function getParks(apiKey, state, resultNumber) {
   const params = {
-    api_key: natl_parks,
+    api_key: apiKey,
     stateCode: state,
     limit: resultNumber
   };
